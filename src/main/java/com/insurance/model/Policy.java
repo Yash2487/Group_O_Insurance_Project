@@ -2,8 +2,7 @@ package com.insurance.model;
 
 public class Policy {
 
-	private int id;
-	private String name;
+
 
 	public int getId() {
 		return id;
@@ -20,4 +19,5 @@ public class Policy {
 	public void setName(String name) {
 		this.name = name;
 	}
+
 }
