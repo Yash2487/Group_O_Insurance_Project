@@ -2,11 +2,7 @@ package com.insurance.model;
 
 public class Policy {
 
-	// id, name, city,
 
-	private int id;
-	private String name;
-	private String city;
 
 	public int getId() {
 		return id;
@@ -22,14 +18,6 @@ public class Policy {
 
 	public void setName(String name) {
 		this.name = name;
-	}
-
-	public String getCity() {
-		return city;
-	}
-
-	public void setCity(String city) {
-		this.city = city;
 	}
 
 }
