@@ -1,13 +1,13 @@
-package com.insurance.task145.controller;
-
+package com.insurance.controller;
+//Task 145 Add the Claim Details-------> Vinayak Doijad
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.insurance.task145.model.InsuranceClaimDetails;
-import com.insurance.task145.service.InsuranceClaimService;
+import com.insurance.model.InsuranceClaimDetails;
+import com.insurance.service.InsuranceClaimService;
 
 @RestController
 public class InsuranceClaimController {
