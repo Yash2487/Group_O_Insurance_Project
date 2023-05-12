@@ -9,22 +9,30 @@ import com.insurance.model.Password;
 import com.insurance.repository.PasswordRepository;
 import com.insurance.service.PasswordService;
 
+/*
+ * Task 144- Build the Restful web services to change the user password
+ * by Yash
+ */
 @Service
 public class PasswordServiceImpl implements PasswordService {
 
-	// inject repository here
+	// inject repo here
 	@Autowired
 	private PasswordRepository passwordRepository;
 
 	@Override
-	public Password changePassword(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	public Password savePassword(Password password) {
+		return passwordRepository.save(password);
 	}
 
 	@Override
-	public Password getPassword(int id) {
-
+	public Password updatePassword(Password password) {
+		Password updatePassword = passwordRepository.findById(password.getId()).orElse(null);
+		if (updatePassword != null) {
+			updatePassword.setNewPassword(password.getNewPassword());
+			passwordRepository.save(updatePassword);
+			return updatePassword;
+		}
 		return null;
 	}
 
