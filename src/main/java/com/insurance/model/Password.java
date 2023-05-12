@@ -6,7 +6,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-// Task 144- Build the Restful web services to change the user password
+/*
+ * Task 144- Build the Restful web services to change the user password
+ * by Yash
+ */
 @Entity
 @Table(name = "password")
 public class Password {
@@ -18,8 +21,10 @@ public class Password {
 	private String currentPassword;
 	private String newPassword;
 
+	public Password() {
+	}
+
 	public Password(String currentPassword, String newPassword) {
-		super();
 		this.currentPassword = currentPassword;
 		this.newPassword = newPassword;
 	}
