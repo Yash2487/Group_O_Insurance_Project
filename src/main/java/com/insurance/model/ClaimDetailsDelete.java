@@ -8,7 +8,7 @@ import javax.persistence.Table;
 /* Task 148 Build the Restful Web Service to delete claim details by Rohini Shinde */
 @Entity
 @Table (name = "policy")
-public class Policy {
+public class ClaimDetailsDelete {
 	// id, claimId, policyId, claimStatus, claimAmount
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
