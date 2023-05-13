@@ -6,21 +6,21 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.insurance.model.PremiumDetails;
-import com.insurance.service.PremiumDetailsService;
+import com.insurance.model.PremiumDetailsInfo;
+import com.insurance.service.PremiumDetailsInfoService;
 
 @RestController
-public class PremiumDetailsController {
+public class PremiumDetailsInfoController {
 	
 	/*Task 152 Design API to save all the premium details into database
 	 Task completed By Abhijit Daware*/
 	
 	@Autowired
-	private PremiumDetailsService premiumDetailsService;
+	private PremiumDetailsInfoService premiumDetailsService;
 
 	@PostMapping("/savepremiPremiumDetails")
-	public ResponseEntity<PremiumDetails> savepremiPremiumDetails(@RequestBody PremiumDetails premiumDetails) {
-		PremiumDetails pd = premiumDetailsService.savePremiumDetails(premiumDetails);
+	public ResponseEntity<PremiumDetailsInfo> savepremiPremiumDetails(@RequestBody PremiumDetailsInfo premiumDetails) {
+		PremiumDetailsInfo pd = premiumDetailsService.savePremiumDetails(premiumDetails);
 		return ResponseEntity.ok().body(pd);
 	}
 }

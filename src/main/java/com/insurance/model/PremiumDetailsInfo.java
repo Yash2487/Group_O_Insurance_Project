@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "premiumDetails")
-public class PremiumDetails {
+public class PremiumDetailsInfo {
 
 	/*Task 152 Design API to save all the premium details into database
 	 Task completed By Abhijit Daware*/
