@@ -10,14 +10,14 @@ import com.insurance.services.ClaimDetailsDeleteService;
 
 @RestController
 public class ClaimDetailsDeleteController {
-	//inject the service
+	// inject the service
 	@Autowired
 	private ClaimDetailsDeleteService policyService;
-	
-	//Design the Restful web services to delete the data based on the id
+
+	// Design the Restful web services to delete the data based on the id
 	@DeleteMapping("/delete/{id}")
-	public void deletePolicyById(@PathVariable("id")Integer id) {
-		//calling the method
+	public void deletePolicyById(@PathVariable("id") Integer id) {
+		// calling the method
 		policyService.deleteById(id);
 	}
 

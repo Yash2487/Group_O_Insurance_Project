@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 
 import com.insurance.repository.ClaimDetailsDeleteRepository;
 import com.insurance.services.ClaimDetailsDeleteService;
-/* Task 148 Build the Restful Web Service to delete claim details by Rohini Shinde */
 
+/* Task 148 Build the Restful Web Service to delete claim details by Rohini Shinde */
 @Service
 public class ClaimDetailsDeleteServiceImpl implements ClaimDetailsDeleteService {
 	// inject the repository reference
