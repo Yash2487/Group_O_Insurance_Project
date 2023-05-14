@@ -1,5 +1,5 @@
 package com.insurance.service.impl;
-
+//IP- 2--- 144*--Build the Restful web service to add claim details------> Vinayak
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

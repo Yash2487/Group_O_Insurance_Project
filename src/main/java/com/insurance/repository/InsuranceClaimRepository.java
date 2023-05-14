@@ -1,5 +1,5 @@
 package com.insurance.repository;
-
+//IP- 2--- 144*--Build the Restful web service to add claim details------> Vinayak
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
