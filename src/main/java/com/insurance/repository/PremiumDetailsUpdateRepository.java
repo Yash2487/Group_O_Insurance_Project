@@ -3,9 +3,9 @@ package com.insurance.repository;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.insurance.model.PremiumDetails;
+import com.insurance.model.PremiumDetailsUpdate;
 
 @Repository
-public interface UpdatePremiumDetailsRepository extends CrudRepository<PremiumDetails, Integer> {
+public interface PremiumDetailsUpdateRepository extends CrudRepository<PremiumDetailsUpdate, Integer> {
 
 }

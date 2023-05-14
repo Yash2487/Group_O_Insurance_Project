@@ -6,18 +6,18 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.insurance.model.PremiumDetails;
-import com.insurance.service.impl.PremiumDetailsServiceImpl;
+import com.insurance.model.PremiumDetailsUpdate;
+import com.insurance.service.impl.PremiumDetailsUpdateServiceImpl;
 
 @RestController
 @CrossOrigin("*")
-public class PremiumDetailsController {
+public class UpdatePremiumDetailsController {
 
 	@Autowired
-	private PremiumDetailsServiceImpl premiumDetailsServiceImpl;
+	private PremiumDetailsUpdateServiceImpl premiumDetailsServiceImpl;
 
 	@PutMapping("/updatePremiumDetails")
-	public PremiumDetails updatePremiumDetails(@RequestBody PremiumDetails premiumDetails) {
+	public PremiumDetailsUpdate updatePremiumDetails(@RequestBody PremiumDetailsUpdate premiumDetails) {
 		return premiumDetailsServiceImpl.updatePremiumDetails(premiumDetails);
 
 	}
