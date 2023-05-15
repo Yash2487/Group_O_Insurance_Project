@@ -5,11 +5,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 /*Task 156 Design the API to store user with multiple premium details into database*/
+
 @Entity
 @Table(name = "policy")
-public class Policy {
+public class PolicyPremium {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	// id, policyId, status, policyName, userId

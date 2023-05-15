@@ -12,7 +12,7 @@ import javax.persistence.Table;
 /*Task 156 Design the API to store user with multiple premium details into database*/
 @Entity
 @Table(name = "user")
-public class User {
+public class UserPremium {
 	// id, name, email
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class User {
 	private String name;
 	private String email;
 	@OneToMany(mappedBy = "userId")
-	private List<Policy> policyList;
+	private List<PolicyPremium> policyList;
 
 	// generate getter and setter method
 	public int getId() {
@@ -47,11 +47,11 @@ public class User {
 		this.email = email;
 	}
 
-	public List<Policy> getPolicyList() {
+	public List<PolicyPremium> getPolicyList() {
 		return policyList;
 	}
 
-	public void setPolicyList(List<Policy> policyList) {
+	public void setPolicyList(List<PolicyPremium> policyList) {
 		this.policyList = policyList;
 	}
 }

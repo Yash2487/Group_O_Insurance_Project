@@ -8,27 +8,27 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.insurance.model.Policy;
-import com.insurance.model.User;
-import com.insurance.services.PolicyService;
-import com.insurance.services.UserService;
+import com.insurance.model.PolicyPremium;
+import com.insurance.model.UserPremium;
+import com.insurance.services.PolicyPremiumService;
+import com.insurance.services.UserPremiumService;
 
 /*Task 156 Design the API to store user with multiple premium details into database*/
 @RestController
 //@RequestMapping(value = "/user")
-public class UserPolicyController {
+public class UserPolicyPremiumController {
 	// inject the both services
 	@Autowired
-	private UserService userService;
+	private UserPremiumService userService;
 
 	@Autowired
-	private PolicyService policyService;
+	private PolicyPremiumService policyService;
 
 	@PostMapping("/userPolicy")
-	public User saveUserPolicy(@RequestBody User user) {
-		User user1 = userService.saveUser(user);
-		List<Policy> policies = user.getPolicyList();
-		for (Policy policy : policies) {
+	public UserPremium saveUserPolicy(@RequestBody UserPremium user) {
+		UserPremium user1 = userService.saveUser(user);
+		List<PolicyPremium> policies = user.getPolicyList();
+		for (PolicyPremium policy : policies) {
 			policy.setUserId(user.getId());
 			policyService.savePolicy(policy);
 		}
