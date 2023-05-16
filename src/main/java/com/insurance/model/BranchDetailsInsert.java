@@ -1,30 +1,39 @@
 package com.insurance.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.lang.NonNull;
 
 /*Design API to add branch details into system
  * Task completed By Abhijit Daware
  */
 
-
-
 @Entity
 @Table(name = "branchDetails")
-public class BranchDetails {
+public class BranchDetailsInsert {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column(name = "branchid")
 	private String branchId;
-	private String Ifsc_Code;
+
+	@Column(name = "ifsccode")
+	private String ifscCode;
+	@Column(name = "branchname")
 	private String branchName;
+
+	@Column(name = "landlinenumber")
 	private String landLineNumber;
+	@Column(name = "address")
 	private String address;
+	@Column(name = "city")
 	private String city;
+	@Column(name = "pincode")
 	private String pinCode;
 
 	public int getId() {
@@ -43,12 +52,12 @@ public class BranchDetails {
 		this.branchId = branchId;
 	}
 
-	public String getIfsc_Code() {
-		return Ifsc_Code;
+	public String getIfscCode() {
+		return ifscCode;
 	}
 
-	public void setIfsc_Code(String ifsc_Code) {
-		Ifsc_Code = ifsc_Code;
+	public void setIfscCode(String ifscCode) {
+		this.ifscCode = ifscCode;
 	}
 
 	public String getBranchName() {
