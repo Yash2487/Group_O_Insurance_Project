@@ -1,5 +1,6 @@
 package com.insurance.model;
-
+//Task 149 Build the Restful web service to add user with multiple 
+//claim details -----------> Vinayak
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,18 +8,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "claim")
+@Table(name = "userclaim")
 public class UserMultipleClaim {
 
-	// id, claimId, policyId, claimStatus, claimAmount
+	// id, policyId, policyName, status, userId
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	private String claimId;
-	private int policyId;
-	private String claimStatus;
-	private float claimAmount;
+	private String policyId;
+	private String policyName;
+	private String policyStatus;
+	private Integer userId; // (Fk)
 
 	public int getId() {
 		return id;
@@ -28,36 +29,36 @@ public class UserMultipleClaim {
 		this.id = id;
 	}
 
-	public String getClaimId() {
-		return claimId;
-	}
-
-	public void setClaimId(String claimId) {
-		this.claimId = claimId;
-	}
-
-	public int getPolicyId() {
+	public String getPolicyId() {
 		return policyId;
 	}
 
-	public void setPolicyId(int policyId) {
+	public void setPolicyId(String policyId) {
 		this.policyId = policyId;
 	}
 
-	public String getClaimStatus() {
-		return claimStatus;
+	public String getPolicyName() {
+		return policyName;
 	}
 
-	public void setClaimStatus(String claimStatus) {
-		this.claimStatus = claimStatus;
+	public void setPolicyName(String policyName) {
+		this.policyName = policyName;
 	}
 
-	public float getClaimAmount() {
-		return claimAmount;
+	public String getPolicyStatus() {
+		return policyStatus;
 	}
 
-	public void setClaimAmount(float claimAmount) {
-		this.claimAmount = claimAmount;
+	public void setPolicyStatus(String policyStatus) {
+		this.policyStatus = policyStatus;
+	}
+
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
 }

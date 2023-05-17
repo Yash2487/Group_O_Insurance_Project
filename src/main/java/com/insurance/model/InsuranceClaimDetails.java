@@ -1,5 +1,5 @@
 package com.insurance.model;
-
+//IP- 2--- 144*--Build the Restful web service to add claim details------> Vinayak
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
