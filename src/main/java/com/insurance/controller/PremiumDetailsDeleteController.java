@@ -21,8 +21,9 @@ public class PremiumDetailsDeleteController {
 
 	// Design API to delete premium details from database
 	@DeleteMapping("/deleteById/{id}")
-	public void deletePremiumDetailsById(@PathVariable("id") int id) {
-		premiumDetailsDeleteService.deletePremiumDetailsById(id);
+	public String deletePremiumDetailsById(@PathVariable("id") int id) {
+
+		return premiumDetailsDeleteService.deletePremiumDetailsById(id);
 	}
 
 }

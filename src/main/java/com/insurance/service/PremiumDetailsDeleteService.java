@@ -6,6 +6,6 @@ package com.insurance.service;
  */
 public interface PremiumDetailsDeleteService {
 
-	public void deletePremiumDetailsById(int id);
+	public String deletePremiumDetailsById(int id);
 
 }
