@@ -5,7 +5,10 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+
+//import org.springframework.data.jpa.repository.Query;
+//import org.springframework.data.repository.CrudRepository;
+//import org.springframework.stereotype.Repository;
 
 import com.insurance.model.PremiumDetails;
 
@@ -14,7 +17,7 @@ import com.insurance.model.PremiumDetails;
  * get all the policy premium details for specific duration
  * by-> Yash
  */
-@Repository
+
 public interface PremiumDetailsRepository extends CrudRepository<PremiumDetails, Serializable> {
 
 	@Query(value = "select * from premium_details p where policy_commencement_date=?/1", nativeQuery = true)
