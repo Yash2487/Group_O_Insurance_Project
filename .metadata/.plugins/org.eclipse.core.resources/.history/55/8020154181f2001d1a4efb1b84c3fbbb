@@ -1,0 +1,25 @@
+package com.insurance.service.impl;
+
+import com.insurance.model.GetUser;
+import com.insurance.repository.GetUserRepository;
+import com.insurance.services.GetUserService;
+
+public class GetUserServiceImpl implements GetUserService {
+
+	// Inject the GetUserRepository here
+	private GetUserRepository getUserRepository;
+
+	@Override
+	public GetUser saveGetUser(GetUser getUser) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public GetUser getUserAll(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

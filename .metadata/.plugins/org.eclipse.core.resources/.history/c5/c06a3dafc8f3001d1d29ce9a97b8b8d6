@@ -1,0 +1,19 @@
+package com.insurance.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.insurance.repository.IndiaBranchDetailsRepository;
+import com.insurance.services.IndiaBranchDetailsService;
+
+@Service
+public class IndiaBranchDetailsServiceImpl implements IndiaBranchDetailsService {
+
+	private IndiaBranchDetailsRepository indiaBranchDetailsRepository;
+
+	@Override
+	public void deleteBranchDetailsBybranchId(int branchId) {
+		indiaBranchDetailsRepository.deleteById(branchId);
+
+	}
+
+}

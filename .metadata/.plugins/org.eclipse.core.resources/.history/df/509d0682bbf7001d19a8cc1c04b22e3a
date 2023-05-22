@@ -1,0 +1,20 @@
+package com.insurance.controller;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.insurance.model.SettlementDetails;
+import com.insurance.services.SettlementDetailsService;
+
+@RestController
+public class SettlementDetailsController {
+
+	private SettlementDetailsService settlementDetailsService;
+
+	public SettlementDetails saveAllsettlementDetails(@RequestBody SettlementDetails settlementDetails) {
+
+		SettlementDetails save = settlementDetailsService.saveSettlementDetails(settlementDetails);
+
+	}
+
+}

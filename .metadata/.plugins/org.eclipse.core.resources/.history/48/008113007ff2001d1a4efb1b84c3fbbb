@@ -1,0 +1,20 @@
+package com.insurance.repository;
+
+import com.insurance.model.GetPremiumDetails;
+import com.insurance.services.GetPremiumDetailsService;
+
+public class GetPremiumDetailsServiceImpl implements GetPremiumDetailsService{
+
+	@Override
+	public GetPremiumDetails savePremiumDetails(GetPremiumDetails getPremiumDetails) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public GetPremiumDetails GetPremiumDetailsAll(GetPremiumDetails getPremiumDetails) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

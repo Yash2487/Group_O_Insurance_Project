@@ -1,0 +1,12 @@
+package com.insurance.services;
+
+import com.insurance.model.GetPremiumDetails;
+
+//Task 157 Design API to get user with multiple premium details from database--------> Vinayak
+public interface GetPremiumDetailsService {
+
+	public GetPremiumDetails savePremiumDetails(GetPremiumDetails getPremiumDetails);
+
+	public GetPremiumDetails GetPremiumDetailsAll(GetPremiumDetails getPremiumDetails);
+
+}

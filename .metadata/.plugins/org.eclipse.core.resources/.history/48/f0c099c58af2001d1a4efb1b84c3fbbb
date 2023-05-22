@@ -1,0 +1,16 @@
+package com.insurance.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.insurance.services.GetPremiumDetailsService;
+
+@RestController
+public class UserPremiumDetailsController {
+	
+	//Inject the GetPremiumDetailsServiceHere
+	private GetPremiumDetailsService getPremiumDetailsService;
+	
+	
+	
+
+}

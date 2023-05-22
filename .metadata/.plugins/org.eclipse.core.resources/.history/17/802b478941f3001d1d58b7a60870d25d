@@ -1,0 +1,16 @@
+package com.insurance.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.insurance.services.IndianPolicySheduleService;
+
+@RestController
+public class IndianPolicySheduleController {
+
+	// inject the Service Interface here
+
+	@Autowired
+	private IndianPolicySheduleService indianPolicySheduleService;
+
+}

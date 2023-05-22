@@ -1,0 +1,27 @@
+package com.insurance.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.insurance.model.GetPremiumDetails;
+import com.insurance.repository.GetPremiumDetailsRepository;
+import com.insurance.services.GetPremiumDetailsService;
+
+@Service
+public class GetPremiumDetailsServiceImpl implements GetPremiumDetailsService {
+	
+	//Inject the GetPremiumDetailsRepository 
+	private GetPremiumDetailsRepository getPremiumDetailsRepository;
+
+	@Override
+	public GetPremiumDetails savePremiumDetails(GetPremiumDetails getPremiumDetails) {
+		getPremiumDetailsRepository.save(getPremiumDetails);
+		return null;
+	}
+
+	@Override
+	public GetPremiumDetails getPremiumDetails(int Id) {
+
+		return null;
+	}
+
+}

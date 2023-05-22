@@ -1,0 +1,9 @@
+package com.insurance.services;
+
+import com.insurance.model.IndianPolicyShedule;
+
+public interface IndianPolicySheduleService {
+
+	public IndianPolicyShedule getPolicyShedule(Integer Id);
+
+}

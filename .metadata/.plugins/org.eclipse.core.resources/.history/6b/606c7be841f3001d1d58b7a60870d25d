@@ -1,0 +1,56 @@
+package com.insurance.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "IndianPolicy")
+public class IndianPolicyShedule {
+
+	private int id;
+	private String PolicyName;
+	private String PlanName;
+	private String UserName;
+	private float PremiumAmount;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getPolicyName() {
+		return PolicyName;
+	}
+
+	public void setPolicyName(String policyName) {
+		PolicyName = policyName;
+	}
+
+	public String getPlanName() {
+		return PlanName;
+	}
+
+	public void setPlanName(String planName) {
+		PlanName = planName;
+	}
+
+	public String getUserName() {
+		return UserName;
+	}
+
+	public void setUserName(String userName) {
+		UserName = userName;
+	}
+
+	public float getPremiumAmount() {
+		return PremiumAmount;
+	}
+
+	public void setPremiumAmount(float premiumAmount) {
+		PremiumAmount = premiumAmount;
+	}
+
+}

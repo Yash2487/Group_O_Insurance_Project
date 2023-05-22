@@ -1,0 +1,13 @@
+package com.insurance.controller;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+//Task- 175 Design web service to add the settlement details once claim is done ------> Vinayak
+
+@Entity
+@Table(name = "settlementDetails")
+public class SettlementDetails {
+
+	
+}

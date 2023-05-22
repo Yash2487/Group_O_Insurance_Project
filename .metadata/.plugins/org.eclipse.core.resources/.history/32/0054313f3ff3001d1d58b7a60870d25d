@@ -1,0 +1,13 @@
+package com.insurance.repository;
+
+import java.io.Serializable;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.insurance.model.IndianPolicyShedule;
+
+public interface IndianPolicySheduleRepository extends CrudRepository<IndianPolicyShedule, Serializable> {
+
+	public IndianPolicyShedule findById(Integer Id);
+
+}

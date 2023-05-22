@@ -1,0 +1,14 @@
+package com.insurance.model;
+
+public class IndiaBranchDetails {
+	
+	//branchId, IFSC_Code, branchName, landlineNumber, address, city, pinCode
+	
+	private int branchId;
+	private String IFSC_Code;
+	private String branchName;
+	private long landLineNumber;
+	private String address;
+	private int pinCode;
+
+}

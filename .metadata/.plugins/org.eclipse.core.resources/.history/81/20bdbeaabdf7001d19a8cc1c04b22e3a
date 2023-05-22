@@ -1,0 +1,20 @@
+package com.insurance.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.insurance.model.SettlementDetails;
+import com.insurance.repository.SettlementDetailsRepository;
+import com.insurance.services.SettlementDetailsService;
+
+@Service
+public class SettlementDetailsServiceImpl implements SettlementDetailsService {
+
+	private SettlementDetailsRepository settlementDetailsRepository;
+
+	@Override
+	public SettlementDetails saveSettlementDetails(SettlementDetails settlementDetails) {
+		SettlementDetails details = settlementDetailsRepository.save(settlementDetails);
+		return details;
+	}
+
+}

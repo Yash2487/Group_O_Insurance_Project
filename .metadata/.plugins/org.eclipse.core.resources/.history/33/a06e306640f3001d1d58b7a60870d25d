@@ -1,0 +1,23 @@
+package com.insurance.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.insurance.model.IndianPolicyShedule;
+import com.insurance.repository.IndianPolicySheduleRepository;
+import com.insurance.services.IndianPolicySheduleService;
+
+@Service
+public class IndianPolicySheduleServiceImpl implements IndianPolicySheduleService {
+
+	// Inject the IndianPolicySheduleRepository Repository Here
+	@Autowired
+	private IndianPolicySheduleRepository indianPolicySheduleRepository;
+
+	@Override
+	public IndianPolicyShedule getPolicyShedule(Integer Id) {
+		IndianPolicyShedule policy = indianPolicySheduleRepository.findById(Id);
+		return null;
+	}
+
+}

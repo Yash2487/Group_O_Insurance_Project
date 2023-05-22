@@ -1,0 +1,27 @@
+package com.insurance.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.insurance.model.GetUser;
+import com.insurance.services.GetPremiumDetailsService;
+import com.insurance.services.GetUserService;
+
+@RestController
+public class UserPremiumDetailsController {
+
+	// Inject the GetPremiumDetailsServiceHere
+	@Autowired
+	private GetPremiumDetailsService getPremiumDetailsService;
+
+	@Autowired
+	private GetUserService getUserService;
+
+	public GetUser saveUserPremiumDetails(@RequestBody GetUser getUser) {
+	 getUserService.saveGetUser(getUser);
+	 getUser.)
+
+	}
+
+}

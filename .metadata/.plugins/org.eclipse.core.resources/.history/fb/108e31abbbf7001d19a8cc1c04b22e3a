@@ -1,0 +1,9 @@
+package com.insurance.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.insurance.model.SettlementDetails;
+
+public interface SettlementDetailsRepository extends JpaRepository<SettlementDetails, Integer>{
+
+}

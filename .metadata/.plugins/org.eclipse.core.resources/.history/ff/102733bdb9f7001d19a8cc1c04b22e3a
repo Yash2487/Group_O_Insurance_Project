@@ -1,0 +1,10 @@
+package com.insurance.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name ="settlementDetails" )
+public class SettlementDetails {
+
+}
