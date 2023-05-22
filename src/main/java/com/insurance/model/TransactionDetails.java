@@ -1,5 +1,8 @@
 package com.insurance.model;
-/*Task 174 Design API to get the transaction details for each user after paying the premium*/
+
+/*Task 174 Design API to get the transaction details for each user after paying the premium
+ * @Author Rohini Shinde
+*/
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -17,10 +20,9 @@ public class TransactionDetails {
 	private int id;
 	private String amount;
 	private String TransactionStatus;
-	
-	
-	@OneToOne(targetEntity = UserDetails.class, cascade = CascadeType.ALL)
-	private UserDetails userDetails;
+
+	@OneToOne(targetEntity = UserData.class, cascade = CascadeType.ALL)
+	private UserData userData;
 
 	// generate getter and setter method
 
@@ -46,13 +48,17 @@ public class TransactionDetails {
 
 	public void setTransactionStatus(String transactionStatus) {
 		TransactionStatus = transactionStatus;
-	}public TransactionDetails() {
-		
 	}
-	public UserDetails getUserDetails() {
-		return userDetails;
+
+	public TransactionDetails() {
+
 	}
-	public void setUserDetails(UserDetails userDetails) {
-		this.userDetails = userDetails;
+
+	public UserData getUserData() {
+		return userData;
+	}
+
+	public void setUserData(UserData userData) {
+		this.userData = userData;
 	}
 }

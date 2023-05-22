@@ -1,5 +1,8 @@
 package com.insurance.model;
-/*Task 174 Design API to get the transaction details for each user after paying the premium*/
+
+/*Task 174 Design API to get the transaction details for each user after paying the premium
+ * @Author Rohini Shinde
+*/
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,8 +10,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "userDetails")
-public class UserDetails {
+@Table(name = "userData")
+public class UserData {
 	// id, name, email, city, state
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,9 +20,8 @@ public class UserDetails {
 	private String email;
 	private String city;
 	private String state;
-	
-	//generate getter and setter method
 
+	// generate getter and setter method
 	public int getId() {
 		return id;
 	}
