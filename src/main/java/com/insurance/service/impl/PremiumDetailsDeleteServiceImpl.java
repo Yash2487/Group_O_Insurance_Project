@@ -18,8 +18,9 @@ public class PremiumDetailsDeleteServiceImpl implements PremiumDetailsDeleteServ
 	private PremiumDetailsDeleteRepository premiumDetailsDeleteRepository;
 
 	@Override
-	public void deletePremiumDetailsById(int id) {
+	public String deletePremiumDetailsById(int id) {
 		premiumDetailsDeleteRepository.deleteById(id);
+		return "Record Is Deleted For Id>> " + id;
 	}
 
 }
