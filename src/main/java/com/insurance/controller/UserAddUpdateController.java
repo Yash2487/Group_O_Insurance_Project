@@ -41,4 +41,11 @@ public class UserAddUpdateController {
 	public UserAddUpdate updateUserDeatils(@RequestBody UserAddUpdate user, @PathVariable("id") int id) {
 		return userService.updateUserDeatils(user);
 	}
+	
+	@DeleteMapping("/deletedata/{id}")
+	public void DeleteUserInfomationDetailsId(@PathVariable("id") Integer id) {
+		userInformationService.DeletedById(id);
+	}
+	
+	
 }
