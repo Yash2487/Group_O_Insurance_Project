@@ -42,9 +42,5 @@ public class UserAddUpdateController {
 		return userService.updateUserDeatils(user);
 	}
 	
-	@DeleteMapping("/deleteData/{id}")
-	public void deleteUserDetailsNomineeDetailsId(@PathVariable("id") Integer id) {
-		nomineeDetailsService.deleteById(id);
-		userDetailsService.deleteById(id);
-	}
+	
 }
