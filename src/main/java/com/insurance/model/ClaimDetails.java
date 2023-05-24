@@ -9,6 +9,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/*
+ * Task 145--Build the Restful web service to add claim details------> Vinayak
+ * Task 146--Build the Restful web service to update claim details--------> Rohini
+ * Task 147--Build the Restful web service to get claim details-------> Abhijit
+ * Task 148--Build the Restful web service to delete claim details ----------> Rohini
+ */
 @Entity
 @Table(name = "claimDetails")
 public class ClaimDetails {
