@@ -7,12 +7,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /*
- * Task 163: Design API to fetch branch details from system
- * @author Yash Mate
+ * Task 161: Design API to add branch details into system--------> Abhijit
+ * Task 162: Design API to update branch details into system.-------> Rohini
+ * Task 163: Design API to fetch branch details from system.----------> Yash
  */
 @Entity
-@Table(name = "branchDetailsFetch")
-public class BranchDetailsFetch {
+@Table(name = "branchDetails")
+public class BranchDetails {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;

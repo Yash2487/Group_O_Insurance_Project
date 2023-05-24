@@ -1,26 +1,26 @@
 package com.insurance.model;
-
+////Task 164 Design API to delete branch details from system ------> Vinayak
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-/*Task 162 Design the API to update branch details into system*/
+
 @Entity
-@Table(name = "branchUpdate")
-public class BranchUpdate {
-	// branchId, IFSC_Code, branchName, landlineNumber, address, city, pincode
+@Table(name = "IndianBranch")
+public class IndiaBankBranchDetails {
+
+	// branchId, IFSC_Code, branchName, landlineNumber, address, city, pinCode
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int branchId;
 	private String IFSC_Code;
 	private String branchName;
-	private String landlineNumber;
+	private long landLineNumber;
 	private String address;
-	private String city;
-	private String pincode;
+	private int pinCode;
 
-	// generate getter and setter method
 	public int getBranchId() {
 		return branchId;
 	}
@@ -45,12 +45,12 @@ public class BranchUpdate {
 		this.branchName = branchName;
 	}
 
-	public String getLandlineNumber() {
-		return landlineNumber;
+	public long getLandLineNumber() {
+		return landLineNumber;
 	}
 
-	public void setLandlineNumber(String landlineNumber) {
-		this.landlineNumber = landlineNumber;
+	public void setLandLineNumber(long landLineNumber) {
+		this.landLineNumber = landLineNumber;
 	}
 
 	public String getAddress() {
@@ -61,20 +61,12 @@ public class BranchUpdate {
 		this.address = address;
 	}
 
-	public String getCity() {
-		return city;
+	public int getPinCode() {
+		return pinCode;
 	}
 
-	public void setCity(String city) {
-		this.city = city;
-	}
-
-	public String getPincode() {
-		return pincode;
-	}
-
-	public void setPincode(String pincode) {
-		this.pincode = pincode;
+	public void setPinCode(int pinCode) {
+		this.pinCode = pinCode;
 	}
 
 }

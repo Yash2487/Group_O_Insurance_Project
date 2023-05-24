@@ -7,19 +7,24 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /*
- * Task- 138 Build the Restful API to delete the user details from database----------> Completed by Abhijeet
+ * Task 134- Build the Restful API to add user details into database ---------> Yash
+ * Task 135- Build the Restful API to update user details into database-------- > Yash
+ * Task 136- Build the Restful API to get user details from database --------> Vinayak
+ * Task 137- Build the Restful API to fetch all user details from database --------> Rohini
+ * Task 138- Build the Restful API to delete the user details from database----------> Abhijeet
  */
-
 @Entity
-@Table(name = "userinfo")
+@Table(name = "user")
 public class UserInformation {
+	// id, name, email, city
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String fName;
-	private String lName;
+	private String name;
+	private String email;
 	private String city;
 
+	// generate getter & setter
 	public int getId() {
 		return id;
 	}
@@ -28,20 +33,20 @@ public class UserInformation {
 		this.id = id;
 	}
 
-	public String getfName() {
-		return fName;
+	public String getName() {
+		return name;
 	}
 
-	public void setfName(String fName) {
-		this.fName = fName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getlName() {
-		return lName;
+	public String getEmail() {
+		return email;
 	}
 
-	public void setlName(String lName) {
-		this.lName = lName;
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	public String getCity() {
